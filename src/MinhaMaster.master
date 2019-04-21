@@ -1,0 +1,311 @@
+<%-- SPG:
+
+Este arquivo HTML foi associado a uma Página Mestra do SharePoint (arquivo .master) que possui o mesmo nome. Embora os arquivos permaneçam associados, você não poderá editar o arquivo .master, e todas as operações para renomear, mover ou excluir serão retribuídas.
+
+Para criar a página mestra diretamente a partir desse arquivo HTML, basta editar a página como você faria normalmente. Use o Gerador de Trechos em https://solucoessa.sharepoint.com/_layouts/15/ComponentHome.aspx?Url=https%3A%2F%2Fsolucoessa%2Esharepoint%2Ecom%2F%5Fcatalogs%2Fmasterpage%2FResponsivo%2FMinhaMaster%2Emaster para criar e personalizar entidades úteis do SharePoint e depois copie-os e cole-os como trechos de HTML no seu código HTML. Todas as atualizações neste arquivo serão sincronizadas automaticamente com a Página Mestra associada.
+
+ --%>
+<%@Master language="C#"%>
+<%@Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="SearchWC" Namespace="Microsoft.Office.Server.Search.WebControls" Assembly="Microsoft.Office.Server.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>
+<%@Register TagPrefix="wssucmui" TagName="MUISelector" Src="~/_controltemplates/15/MUISelector.ascx"%>
+<%@Register TagPrefix="PublishingRibbon" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx"%>
+<!DOCTYPE html >
+<SharePoint:SPHtmlTag lang="en" runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+    <head runat="server">
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+        
+        
+        
+        <meta name="GENERATOR" content="Microsoft SharePoint" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Expires" content="0" />
+        <SharePoint:RobotsMetaTag runat="server">
+        </SharePoint:RobotsMetaTag>
+        <SharePoint:PageTitle runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">
+                <SharePoint:ProjectProperty Property="Title" runat="server">
+                </SharePoint:ProjectProperty>
+            </asp:ContentPlaceHolder>
+        </SharePoint:PageTitle>
+        <SharePoint:StartScript runat="server">
+        </SharePoint:StartScript>
+        <SharePoint:CssLink runat="server" Version="15">
+        </SharePoint:CssLink>
+        <SharePoint:CacheManifestLink runat="server">
+        </SharePoint:CacheManifestLink>
+        <SharePoint:PageRenderMode runat="server" RenderModeType="Standard">
+        </SharePoint:PageRenderMode>
+        <SharePoint:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false">
+        </SharePoint:ScriptLink>
+        <SharePoint:CustomJSUrl runat="server">
+        </SharePoint:CustomJSUrl>
+        <SharePoint:SoapDiscoveryLink runat="server">
+        </SharePoint:SoapDiscoveryLink>
+        <SharePoint:AjaxDelta id="DeltaPlaceHolderAdditionalPageHead" Container="false" runat="server">
+            <asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">
+            </asp:ContentPlaceHolder>
+            <SharePoint:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true">
+            </SharePoint:DelegateControl>
+            <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">
+            </asp:ContentPlaceHolder>
+        </SharePoint:AjaxDelta>
+        <SharePoint:CssRegistration Name="Themable/corev15.css" runat="server">
+        </SharePoint:CssRegistration>
+        <SharePoint:AjaxDelta id="DeltaSPWebPartManager" runat="server">
+            <WebPartPages:SPWebPartManager runat="server">
+            </WebPartPages:SPWebPartManager>
+        </SharePoint:AjaxDelta>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        
+        <!-- Bootstrap core CSS -->
+        <link href="/_catalogs/masterpage/Responsivo/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Custom styles for this template -->
+        <link href="/_catalogs/masterpage/Responsivo/css/modern-business.css" rel="stylesheet" />
+        </head>
+    <body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();"><SharePoint:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" /><SharePoint:ImageLink runat="server" /><SharePoint:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server"><asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+        
+        
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">
+            <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+            <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                    <SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">
+                    </SharePoint:EncodedLiteral>
+                </a>
+            </div>
+        </SharePoint:SPSecurityTrimmedControl>
+        
+        <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">
+            <wssucw:Welcome runat="server" EnableViewState="false">
+            </wssucw:Welcome>
+        </SharePoint:SPSecurityTrimmedControl>
+        
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer">
+            
+            	<div id="ms-designer-ribbon fixed-top">
+		            <PublishingRibbon:PublishingRibbon runat="server" />
+		            
+		        </div>
+
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container">
+                        <a class="navbar-brand" href="">Start Bootstrap
+                        
+                        </a>
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/_catalogs/masterpage/Responsivo/about.html">About
+                                    
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/_catalogs/masterpage/Responsivo/services.html">Services
+                                    
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/_catalogs/masterpage/Responsivo/contact.html">Contact
+                                    
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Portfolio
+            
+                                    
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/portfolio-1-col.html">1 Column Portfolio
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/portfolio-2-col.html">2 Column Portfolio
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/portfolio-3-col.html">3 Column Portfolio
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/portfolio-4-col.html">4 Column Portfolio
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/portfolio-item.html">Single Portfolio Item
+                                        
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Blog
+            
+                                    
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/blog-home-1.html">Blog Home 1
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/blog-home-2.html">Blog Home 2
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/blog-post.html">Blog Post
+                                        
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Other Pages
+            
+                                    
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/full-width.html">Full Width Page
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/sidebar.html">Sidebar Page
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/faq.html">FAQ
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/404.html">404
+                                        
+                                        </a>
+                                        <a class="dropdown-item" href="/_catalogs/masterpage/Responsivo/pricing.html">Pricing Table
+                                        
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div data-name="SearchBox">
+                                
+                                <SearchWC:SearchBoxScriptWebPart UseSiteCollectionSettings="true" EmitStyleReference="false" ShowQuerySuggestions="false" ChromeType="None" UseSharedSettings="true" TryInplaceQuery="false" ServerInitialRender="true" runat="server">
+                                    
+                                </SearchWC:SearchBoxScriptWebPart>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <header>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1">
+                            </li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2">
+                            </li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <!-- Slide One - Set the background image for this slide in the line below -->
+                            <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>First Slide
+                                    
+                                    </h3>
+                                    <p>This is a description for the first slide.
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide Two - Set the background image for this slide in the line below -->
+                            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Second Slide
+                                    
+                                    </h3>
+                                    <p>This is a description for the second slide.
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Slide Three - Set the background image for this slide in the line below -->
+                            <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Third Slide
+                                    
+                                    </h3>
+                                    <p>This is a description for the third slide.
+                                    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true">
+                            </span>
+                            <span class="sr-only">Previous
+                            
+                            </span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true">
+                            </span>
+                            <span class="sr-only">Next
+                            
+                            </span>
+                        </a>
+                    </div>
+                </header>
+                <!-- Bootstrap core JavaScript -->
+                <script src="/_catalogs/masterpage/Responsivo/vendor/jquery/jquery.min.js">//<![CDATA[
+                
+                //]]></script>
+                <script src="/_catalogs/masterpage/Responsivo/vendor/bootstrap/js/bootstrap.bundle.min.js">//<![CDATA[
+                
+                //]]></script>
+                <!-- Page Content -->
+                <div class="container">
+                    <div data-name="ContentPlaceHolderMain">
+                        
+                        
+                        <SharePoint:AjaxDelta ID="DeltaPlaceHolderMain" IsMainContent="true" runat="server">
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </SharePoint:AjaxDelta>
+                        
+                    </div>
+                </div>
+                <!-- /.container -->
+                <!-- Footer -->
+                <footer class="py-5 bg-dark">
+                    <div class="container">
+                        <p class="m-0 text-center text-white">Copyright © Your Website 2019
+                        
+                        </p>
+                    </div>
+                    <!-- /.container -->
+                </footer>
+            </div>
+        </div>
+    <SharePoint:AjaxDelta id="DeltaFormDigest" BlockElement="true" runat="server"><asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server"><SharePoint:formdigest runat="server" /></asp:ContentPlaceHolder></SharePoint:AjaxDelta></SharePoint:SharePointForm><SharePoint:AjaxDelta id="DeltaPlaceHolderUtilityContent" runat="server"><asp:ContentPlaceHolder id="PlaceHolderUtilityContent" runat="server" /></SharePoint:AjaxDelta><asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigationSiteMap" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderGlobalNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSearchArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTopNavBar" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarDataSource" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderCalendarNavigator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftActions" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderSiteName" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageDescription" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderPageImage" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderMiniConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderTitleAreaSeparator" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderNavSpacer" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderLeftNavBarBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyLeftBorder" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" Visible="False" runat="server" /><asp:ContentPlaceHolder id="WSSDesignConsole" Visible="False" runat="server" /><asp:ContentPlaceHolder id="SPNavigation" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchTop" Visible="False" runat="server" /><asp:ContentPlaceHolder id="PlaceHolderQuickLaunchBottom" Visible="False" runat="server" /></body>
+</SharePoint:SPHtmlTag>
