@@ -1,0 +1,13 @@
+				<!--MS:<SharePoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedContro19" runat="server" Permissions="ViewPages">-->
+                <script type="text/javascript">//<![CDATA[
+				document.getElementById("s4-ribbonrow").style.display = "none";document.getElementById("suiteBarTop").style.display = "none";                
+                //]]>
+                </script>
+	            <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
+	            
+				<!--MS:<SharePoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedContro110" runat="server" Permissions="FullMask">-->
+                <script type="text/javascript">//<![CDATA[
+				document.getElementById("s4-ribbonrow").style.display = "block";document.getElementById("suiteBarTop").style.display = "block";                
+                //]]>
+                </script>
+	            <!--ME:</SharePoint:SPSecurityTrimmedControl>-->
